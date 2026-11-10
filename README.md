@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Geode](screenshot.png)
 
-Geode is a clean-room design with the feature set of FabFilter Pro-R 2. Geode 1.x matched the original Pro-R (November 2016). Version 2.0 adds:
+Geode is a stereo reverb with fourteen room models, from Small Ambience to Vast Cathedral, a decay-rate EQ and a post EQ. Version 2.0 adds:
 - the Vintage and Plate algorithms
 - Decay Rate from 25% to 400%
 - Thickness, Ducking, Auto Gate and Freeze
@@ -15,7 +15,7 @@ Geode is a clean-room design with the feature set of FabFilter Pro-R 2. Geode 1.
 - a preset browser with search and favourites
 - impulse response import, which turns a WAV impulse response into Geode settings
 
-It was written from scratch, working only from FabFilter's public product pages, release announcements and news coverage. No FabFilter code, binaries, presets, artwork or trademarks were used.
+It was written from scratch; no third-party code, presets or artwork are included.
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth)
@@ -110,29 +110,7 @@ xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/*/Geode*
 
 ![Help](screenshot-help.png)
 
-### Compared with FabFilter Pro-R 2
-
-| Pro-R 2 | Geode |
-|---|---|
-| Space: stepless control fading between room models, with a matching decay time | ✓ fourteen models, from Small Ambience to Vast Cathedral |
-| Vintage algorithm (1980s-90s digital units) and Plate algorithm | ✓ |
-| Decay Rate 25-400% | ✓ |
-| Brightness, Character, Distance, Stereo Width | ✓ |
-| Thickness (saturation and compression) | ✓ |
-| Ducking, Auto Gate | ✓ (gate with threshold and hold) |
-| Freeze | ✓ |
-| Mix with Lock Mix; predelay 0-500 ms with tempo sync | ✓ |
-| Decay Rate EQ: six bands | ✓ bell, shelves, notch |
-| Post EQ: six bands, each mid/side or L/R | ✓ stereo, mid, side, left, right |
-| Impulse response import, analysed into settings, decay rate and output EQ | ✓ |
-| Real-time spectrum analyzer that also shows decay time per frequency | ✓ |
-| Piano display scale | ✓ |
-| Preset browser with search, tags, favourites and filtering | ✓ search (names and categories) and favourites |
-| MIDI Learn, undo/redo, A/B, smooth parameter changes, help with interactive hints | ✓ hover tips, help pages and full manual |
-| Resizable interface, full-screen mode | Freely resizable interface |
-| Mono, surround and Dolby Atmos (up to 9.1.6) | Stereo only |
-| AAX, AudioSuite, Pro Tools control surfaces | Not supported (needs Avid's SDK and signing) |
-| iPad (AUv3) | Not supported |
+Not supported: Mono, surround and Dolby Atmos (up to 9.1.6); AAX, AudioSuite, Pro Tools control surfaces; iPad (AUv3).
 
 ## Build from source
 
@@ -199,7 +177,7 @@ New parameters, styles and presets are only ever appended, so saved sessions and
 
 ## Changelog
 
-- **2.0:** Brings Geode up to Pro-R 2. New in this version:
+- **2.0:** New in this version:
   - Vintage and Plate algorithms.
   - Decay Rate 25-400%.
   - Thickness, Ducking, Auto Gate and Freeze.
@@ -217,5 +195,3 @@ New parameters, styles and presets are only ever appended, so saved sessions and
 ## License
 
 [MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Geode/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
-
-"FabFilter", "FabFilter Pro-R" and "Pro-R 2" are trademarks of FabFilter Software Instruments. Geode is not affiliated with or endorsed by FabFilter.

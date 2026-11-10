@@ -15,7 +15,7 @@ Geode is a stereo reverb with fourteen room models, from Small Ambience to Vast 
 - a preset browser with search and favourites
 - impulse response import, which turns a WAV impulse response into Geode settings
 
-It was written from scratch; no third-party code, presets or artwork are included.
+It was written from scratch: the DSP, interface and presets are original work, and third-party components (such as the DPF framework) are listed under [License](#license).
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth)
